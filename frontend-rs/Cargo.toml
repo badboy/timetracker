@@ -1,0 +1,26 @@
+[package]
+
+name = "webplatform"
+version = "0.3.0"
+license = "MIT"
+description = "APIs for the web platform for cross-compiled Rust to JS."
+authors = ["Tim Cameron Ryan <tim@timryan.org>"]
+
+[[bin]]
+
+name = "webplatform"
+
+[lib]
+name = "webplatform"
+path = "src/lib.rs"
+
+[dependencies]
+libc = "0.1.3"
+
+[dependencies.webplatform_concat_bytes]
+path = "./concat_bytes"
+version = "0.0.1"
+
+[dependencies.rustc-serialize]
+git = "https://github.com/badboy/rustc-serialize"
+branch = "hotpatch-for-old-version"

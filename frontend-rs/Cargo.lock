@@ -1,0 +1,23 @@
+[root]
+name = "webplatform"
+version = "0.3.0"
+dependencies = [
+ "libc 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustc-serialize 0.3.16 (git+https://github.com/badboy/rustc-serialize?branch=hotpatch-for-old-version)",
+ "webplatform_concat_bytes 0.0.1",
+]
+
+[[package]]
+name = "libc"
+version = "0.1.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "rustc-serialize"
+version = "0.3.16"
+source = "git+https://github.com/badboy/rustc-serialize?branch=hotpatch-for-old-version#3a1bf11eb408ce217a14d83ee7ba4295c1e4943f"
+
+[[package]]
+name = "webplatform_concat_bytes"
+version = "0.0.1"
+
